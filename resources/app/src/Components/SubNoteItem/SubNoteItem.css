@@ -1,0 +1,14 @@
+.subNote{
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px!important;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 5px 5px -6px #000;
+    box-shadow: 0 5px 5px -6px #000;
+}
+
+.dateSubNote{
+    float: right!important;
+    padding-right: 10px!important;
+}

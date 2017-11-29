@@ -1,0 +1,9 @@
+.headerCustom{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.logout:hover{
+    cursor: pointer;
+    color: blue;
+}
