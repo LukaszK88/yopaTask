@@ -14,6 +14,10 @@ class Login extends React.Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
+  componentWillReceiveProps(){
+    console.log('test');
+  }
+
   componentDidMount() {
     if (window.localStorage.getItem('token')) {
       this.props.history.push('/overview');
@@ -22,7 +26,6 @@ class Login extends React.Component {
 
   onSubmit(values) {
     this.props.loginUser(values);
-    this.props.history.push('/overview');
   }
 
   render() {
@@ -99,4 +102,3 @@ function validate(values) {
 }
 export default
 reduxForm({ validate, form: 'loginForm' })(connect(null, { loginUser })(Login));
-

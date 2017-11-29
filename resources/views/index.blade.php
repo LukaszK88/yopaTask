@@ -19,7 +19,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Ranking</title>
+    <title>Yopa Task</title>
 </head>
 <body>
 <noscript>
@@ -36,6 +36,6 @@
   To begin the development, run `npm start` or `yarn start`.
   To create a production bundle, use `npm run build` or `yarn build`.
 -->
-<script type="text/javascript" src="{{asset('js/index.js')}}"></script>
+<script type="text/javascript" src="{{asset('app/index.js')}}"></script>
 </body>
 </html>

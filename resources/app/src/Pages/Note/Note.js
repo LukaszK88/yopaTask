@@ -14,7 +14,7 @@ class Note extends React.Component {
 
   renderSubNotes() {
     if (this.props.selectedNote) {
-      if(this.props.selectedNote.sub_notes.length > 1) {
+      if(this.props.selectedNote.sub_notes.length > 0) {
         return _.map(_.orderBy(this.props.selectedNote.sub_notes, ['created_at'], ['desc']), subNote => (
           <SubNoteItem key={subNote.id} subNote={subNote}/>
         ));

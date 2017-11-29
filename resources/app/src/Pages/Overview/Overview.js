@@ -17,7 +17,7 @@ class Overview extends React.Component {
 
   renderNotes() {
     return _.map(_.orderBy(this.props.notes, ['created_at'], ['desc']), note => (
-      <List.Item>
+      <List.Item key={note.id}>
         <Link to={`note/${note.id}`}>
           <div className="row">
             <div className="col-sm-3 col-4">

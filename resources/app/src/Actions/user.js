@@ -28,9 +28,9 @@ export function loginUser(user) {
     setAuthorizationToken(token);
     return (dispatch) => {
       dispatch(currentLoggedInUser(token));
+      window.location.reload();
     };
   }).catch(error => (dispatch) => {
 
   });
 }
-

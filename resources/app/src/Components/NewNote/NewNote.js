@@ -24,16 +24,19 @@ class NewNote extends React.Component {
     this.handleClose();
   }
 
-  handleOpen = () => this.setState({ modalOpen: true });
+  handleOpen (){
+    this.setState({ modalOpen: true });
+  }
 
-  handleClose = () => this.setState({ modalOpen: false });
-
+  handleClose (){
+    this.setState({ modalOpen: false });
+  }
   render() {
     const handleSubmit = this.props.handleSubmit;
     console.log(this.props);
     return (
-      <Modal style={{height:300}} closeIcon size="tiny" open={this.state.modalOpen}  onClose={this.handleClose}  trigger={<Button
-        onClick={this.handleOpen}
+      <Modal style={{height:300}} closeIcon size="tiny" open={this.state.modalOpen}  onClose={() => this.handleClose()}  trigger={<Button
+        onClick={() => this.handleOpen()}
         className="loginButton"
         color="teal"
         labelPosition="right"
@@ -63,9 +66,8 @@ class NewNote extends React.Component {
                   />
                 </div>
               </div>
-              <ActionButtons closeText="Close" closeAction={this.handleClose}>
+              <ActionButtons closeText="Close" closeAction={() =>this.handleClose()}>
                 <Button
-                  className=""
                   color="teal"
                   labelPosition="right"
                   icon="right chevron"

@@ -11,5 +11,4 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.react('resources/assets/src/index.js', 'public/app');
-
+mix.react('resources/app/src/index.js', 'public/app');

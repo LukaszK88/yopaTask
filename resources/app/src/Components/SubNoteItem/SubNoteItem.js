@@ -9,7 +9,7 @@ const SubNoteItem = ({
   <Feed.Event >
     <Feed.Label>
       <img
-        src="https://www.google.co.uk/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjE_vSouuTXAhVeGsAKHRIdCjoQjRwIBw&url=https%3A%2F%2Fpixabay.com%2Fen%2Fblank-profile-picture-mystery-man-973460%2F&psig=AOvVaw0dAo0O_KPkV2EVyN0ZZYqB&ust=1512067980846166"/>
+        src={subNote.user.image}/>
     </Feed.Label>
     <Feed.Content className="subNote">
       <Feed.Summary>
@@ -24,4 +24,3 @@ const SubNoteItem = ({
 );
 
 export default SubNoteItem;
-
