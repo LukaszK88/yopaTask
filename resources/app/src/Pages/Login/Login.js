@@ -14,10 +14,6 @@ class Login extends React.Component {
     this.onSubmit = this.onSubmit.bind(this);
   }
 
-  componentWillReceiveProps(){
-    console.log('test');
-  }
-
   componentDidMount() {
     if (window.localStorage.getItem('token')) {
       this.props.history.push('/overview');

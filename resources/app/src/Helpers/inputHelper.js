@@ -12,6 +12,7 @@ class InputHelper {
           error={error}
           fluid={field.fluid}
           className={field.className}
+          type={field.type}
           placeholder={field.placeholder}
         />
 

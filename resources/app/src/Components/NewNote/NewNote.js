@@ -33,7 +33,7 @@ class NewNote extends React.Component {
   }
   render() {
     const handleSubmit = this.props.handleSubmit;
-    console.log(this.props);
+    
     return (
       <Modal style={{height:300}} closeIcon size="tiny" open={this.state.modalOpen}  onClose={() => this.handleClose()}  trigger={<Button
         onClick={() => this.handleOpen()}

@@ -49,7 +49,7 @@ class Overview extends React.Component {
           <div className="col-sm-8 offset-sm-2 d-flex justify-content-between ">
             <div className="card overviewCard">
               <div className="card-block">
-                <List celled relaxed>
+                <List celled relaxed size="large">
                   <List.Item style={{borderTop:0}}>
                     <div className="row">
                       <div className="col-sm-3 col-4">
