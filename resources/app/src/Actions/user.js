@@ -1,11 +1,10 @@
 import axios from 'axios';
 import setAuthorizationToken from '../utils/setAuthorizationToken';
 import { CURRENT_USER } from './types';
-
-const API = 'http://127.0.0.1:8000/api/';
+import { config } from '../config';
 
 export function currentLoggedInUser(token) {
-  const request = axios.get(`${API}user`, { Authorization: `Bearer ${token}` });
+  const request = axios.get(`${config.API.base}user`, { Authorization: `Bearer ${token}` });
 
   return {
     type: CURRENT_USER,
