@@ -21,7 +21,7 @@ export function logout() {
 }
 
 export function loginUser(user) {
-  return axios.post(`${API}authenticate`, user).then((response) => {
+  return axios.post(`${config.API.base}authenticate`, user).then((response) => {
     const { token, message } = response.data;
     window.localStorage.setItem('token', token);
     setAuthorizationToken(token);
